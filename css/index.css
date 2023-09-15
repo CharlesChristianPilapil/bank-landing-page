@@ -724,10 +724,6 @@ video {
   gap: 80px;
 }
 
-.self-center {
-  align-self: center;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -868,7 +864,6 @@ ul li a:hover {
 
 #list div {
   min-height: 240px;
-  border: 1px solid red;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }

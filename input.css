@@ -39,7 +39,6 @@ ul li a:hover {
 
 #list div {
     min-height: 240px;
-    border: 1px solid red;
     @apply py-5;
 }
 
