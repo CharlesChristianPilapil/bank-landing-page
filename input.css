@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --PrimaryDarkBlue: #2d314d;
+    --PrimaryLimeGreen: #31d35c;
+    --PrimaryBrightCyan: #2bb7da;
+    --NeutralLightGrayishBlue: #f3f4f6;
+    --NeutralVeryLightGray: #fafafa;
+    --NeutralWhite: #ffffff;
+}
+
+button {
+    color: #ffffff;
+    background-image: linear-gradient(to right, var(--PrimaryLimeGreen), var(--PrimaryBrightCyan));
+    transition: background-image 1s ease-in-out;
+}
+  
+button:hover {
+    background-image: linear-gradient(to right, #4df579, #36cff5);
+}
+
+ul li a {
+    @apply text-NeutralGrayishBlue transition duration-300;
+}
+
+ul li a:hover {
+    @apply text-PrimaryDarkBlue;
+}
+
+#list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 35px;
+    place-items: end center;
+}
+
+@media (min-width: 976px) {
+    #list {
+        grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    }
+}
