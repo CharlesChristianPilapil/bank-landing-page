@@ -33,8 +33,14 @@ ul li a:hover {
 #list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 35px;
-    place-items: end center;
+    grid-gap: 30px;
+    justify-items: center;
+}
+
+#list div {
+    min-height: 240px;
+    border: 1px solid red;
+    @apply py-5;
 }
 
 @media (min-width: 976px) {
