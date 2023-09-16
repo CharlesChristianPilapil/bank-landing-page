@@ -21,6 +21,11 @@ module.exports = {
 
       fontFamily: {
         PublicSans: ['"Public San", "sans-serif"']
+      },
+
+      gridTemplateColumns: {
+        smGrid: 'repeat(auto-fit, minmax(250px, 1fr))',
+        lgGrid: 'repeat(auto-fit, minmax(20%, 1fr))'
       }
     },
   },

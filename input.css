@@ -12,6 +12,10 @@
     --NeutralWhite: #ffffff;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 button {
     color: #ffffff;
     background-image: linear-gradient(to right, var(--PrimaryLimeGreen), var(--PrimaryBrightCyan));
@@ -23,27 +27,72 @@ button:hover {
 }
 
 ul li a {
-    @apply text-NeutralGrayishBlue transition duration-300;
+    @apply text-NeutralGrayishBlue transition duration-500 relative font-bold;
+}
+
+ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -26px;
+    height: 4px;
+    width: 100%;
+    left: -50%;
+    background-image: linear-gradient(to right, var(--PrimaryLimeGreen), var(--PrimaryBrightCyan));
+    transition: .5s;
+    transform: scaleX(0);
+}
+
+ul li a:hover::after {
+    left: 0;
+    transform: scaleX(1);
 }
 
 ul li a:hover {
     @apply text-PrimaryDarkBlue;
 }
 
-#list {
+/* #list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
-    justify-items: center;
-}
-
-#list div {
-    min-height: 240px;
-    @apply py-5;
+    align-items: flex-end;
 }
 
 @media (min-width: 976px) {
     #list {
         grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
     }
+} */
+
+#list div {
+    min-height: 240px;
+    @apply py-5;
+}
+
+#articles div img {
+    @apply h-[220px] lg:h-[200px] rounded-[10px];
+}
+
+#articles div h1 {
+    @apply cursor-pointer transition duration-300;
+}
+
+#articles div h1:hover {
+    @apply text-PrimaryBrightCyan;
+}
+
+i {
+    @apply text-[30px] text-white cursor-pointer transition duration-300;
+}
+
+i:hover {
+    @apply text-PrimaryBrightCyan;
+}
+
+#footer-hover p {
+    @apply text-NeutralWhite cursor-pointer transition duration-300;
+}
+
+#footer-hover p:hover {
+    @apply text-PrimaryBrightCyan;
 }
