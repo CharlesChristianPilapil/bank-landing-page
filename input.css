@@ -12,10 +12,6 @@
     --NeutralWhite: #ffffff;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 button {
     color: #ffffff;
     background-image: linear-gradient(to right, var(--PrimaryLimeGreen), var(--PrimaryBrightCyan));
@@ -95,4 +91,12 @@ i:hover {
 
 #footer-hover p:hover {
     @apply text-PrimaryBrightCyan;
+}
+
+#wrapper {
+    width: 100%;
+    height: 10px;
+    overflow-x: hidden;
+    position: absolute;
+    background: black;
 }
