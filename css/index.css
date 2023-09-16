@@ -709,6 +709,10 @@ video {
   width: 750px;
 }
 
+.w-\[85\%\] {
+  width: 85%;
+}
+
 .w-\[90\%\] {
   width: 90%;
 }
@@ -968,11 +972,15 @@ ul li a:hover {
 #articles div img {
   height: 220px;
   border-radius: 10px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 @media (min-width: 976px) {
   #articles div img {
     height: 200px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -1026,10 +1034,10 @@ i:hover {
 #wrapper {
   width: 100%;
   z-index: -1;
-  min-height: 60rem;
-  overflow-x: hidden;
+  min-height: 40rem;
+  overflow: hidden;
   position: absolute;
-  top: 0px;
+  top: 0;
 }
 
 .hover\:-translate-y-2:hover {
@@ -1134,6 +1142,10 @@ i:hover {
     width: 100%;
   }
 
+  .lg\:w-\[90\%\] {
+    width: 90%;
+  }
+
   .lg\:grid-cols-lgGrid {
     grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
   }
@@ -1184,11 +1196,6 @@ i:hover {
     padding-bottom: 0px;
   }
 
-  .lg\:py-\[80px\] {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-
   .lg\:text-start {
     text-align: start;
   }
@@ -1207,11 +1214,20 @@ i:hover {
     top: -30px;
   }
 
+  .xl\:h-\[50rem\] {
+    height: 50rem;
+  }
+
   .xl\:w-\[660px\] {
     width: 660px;
   }
 
   .xl\:w-\[950px\] {
     width: 950px;
+  }
+
+  .xl\:py-\[70px\] {
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 }

@@ -65,8 +65,9 @@ ul li a:hover {
     @apply py-5;
 }
 
+
 #articles div img {
-    @apply h-[220px] lg:h-[200px] rounded-[10px];
+    @apply h-[220px] lg:h-[200px] rounded-[10px] px-5 lg:px-0;
 }
 
 #articles div h1 {
@@ -96,8 +97,8 @@ i:hover {
 #wrapper {
     width: 100%;
     z-index: -1;
-    min-height: 60rem;
-    overflow-x: hidden;
+    min-height: 40rem;
+    overflow: hidden;
     position: absolute;
-    top: 0px;
+    top: 0;
 }
