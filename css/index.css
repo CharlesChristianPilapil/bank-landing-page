@@ -566,6 +566,10 @@ video {
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
 .sticky {
   position: sticky;
 }
@@ -597,6 +601,30 @@ video {
 
 .top-\[90px\] {
   top: 90px;
+}
+
+.-top-\[105px\] {
+  top: -105px;
+}
+
+.-top-\[170px\] {
+  top: -170px;
+}
+
+.-top-\[160px\] {
+  top: -160px;
+}
+
+.-top-\[1550px\] {
+  top: -1550px;
+}
+
+.-top-\[150px\] {
+  top: -150px;
+}
+
+.-top-\[130px\] {
+  top: -130px;
 }
 
 .-z-10 {
@@ -762,6 +790,14 @@ video {
 
 .gap-\[80px\] {
   gap: 80px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .rounded-\[10px\] {

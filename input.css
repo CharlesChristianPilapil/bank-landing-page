@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
     --PrimaryDarkBlue: #2d314d;
     --PrimaryLimeGreen: #31d35c;
