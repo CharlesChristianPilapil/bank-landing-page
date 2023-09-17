@@ -27,12 +27,16 @@
         <img
         class="h-[24px] ml-5"
         src="images/logo.svg" alt="logo">
-        <div class="hidden transition duration-500 lg:block lg:w-1/2">
-          <ul
-            class="flex flex-col w-4/5 absolute inset-0 mx-auto h-fit top-[55px] py-5 gap-3 justify-center text-center z-10 bg-NeutralWhite
-            md:w-2/3 lg:w-full lg:flex-row lg:static lg:py-0 lg:inset-auto lg:justify-around
-            "
-            >
+
+        <div
+        id="navBar"
+        class="hidden absolute top-[90px] inset-x-0 mx-auto bg-NeutralWhite w-[320px] py-7 rounded-[10px] opacity-0
+        md:w-[400px] lg:static lg:opacity-100 lg:top-0 lg:py-0 lg:w-1/2 lg:block lg:shadow-none
+        "
+        >
+          <ul class="flex flex-col gap-5 justify-center text-center lg:w-full lg:justify-around
+          lg:flex-row
+          "> 
             <li> <a href=""> Home </a> </li>
             <li> <a href=""> About </a> </li>
             <li> <a href=""> Contact </a> </li>
@@ -40,13 +44,15 @@
             <li> <a href=""> Careers </a> </li>
           </ul>
         </div>
+
         <button class="hidden mr-5 py-[8px] w-[155px] rounded-full
         lg:block
         ">
           Request Invite
         </button>
         <img
-        class="h-[20px] w-[24px] mr-5 cursor-pointer
+        id="hamburger"
+        class="h-[20px] w-[20px] mr-5 cursor-pointer
         lg:hidden
         "
         src="images/icon-hamburger.svg" alt="close-icon">
@@ -352,6 +358,7 @@
 
 
 
+  <script src="index.js"></script>
 
 
 </body>
