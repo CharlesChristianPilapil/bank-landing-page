@@ -60,3 +60,25 @@ function toggle () {
     }, 200);
   }
   
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry);
+        if(entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+
+        else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const leftright = document.querySelectorAll('#leftRight');
+leftright.forEach((el) => observer.observe(el));
+
+const footerhover = document.querySelectorAll('#footer-hover');
+footerhover.forEach((el) => observer.observe(el));
+
+const rightLeft = document.querySelectorAll('#rightLeft');
+rightLeft.forEach((el) => observer.observe(el));

@@ -64,7 +64,7 @@
     <section class="">
 
       <div id="wrapper" class="xl:h-[50rem]">
-        <img src="images/image-mockups.png" alt="" class="hidden w-[510px] -top-[5px] absolute mx-auto inset-x-0 z-20
+        <img id="leftRight" src="images/image-mockups.png" alt="" class="hidden w-[510px] -top-[5px] absolute mx-auto inset-x-0 z-20
         lg:inset-x-auto lg:-right-[80px] lg:block xl:w-[660px] xl:-top-[30px] xl:-right-[100px]
         ">
         <img src="images/bg-intro-desktop.svg" alt="intro-desktop"
@@ -75,7 +75,7 @@
       <div class="container mx-auto gap-5 flex flex-col xl:py-[70px] lg:flex-row-reverse lg:justify-between">
         <div class="h-[300px]">
 
-          <img src="images/image-mockups.png" alt="" class="w-[360px] -top-[55px] absolute mx-auto inset-x-0 z-10
+          <img id="rightLeft" src="images/image-mockups.png" alt="" class="w-[360px] -top-[55px] absolute mx-auto inset-x-0 z-10
           lg:inset-x-auto lg:-right-[80px] lg:hidden
           ">
 
@@ -85,6 +85,7 @@
 
 
         <div
+        id="leftRight"
         class="flex flex-col gap-5 px-5 text-center font-semibold text-PrimaryDarkBlue
         md:px-10 lg:text-start lg:px-5 lg:gap-10
         ">
@@ -109,6 +110,7 @@
     <section class="bg-NeutralLightGrayishBlue py-12 -z-20">
       <div class="container mx-auto flex flex-col gap-12 text-center">
         <div 
+        id="rightLeft"
         class="flex flex-col gap-5 items-center px-5 md:text-start md:items-start md:w-[610px]"
         >
           <h1 
@@ -129,6 +131,7 @@
         lg:grid-cols-lgGrid
         ">
           <div
+          id="rightLeft"
           class="flex flex-col gap-4 items-center px-5
           md:items-start md:text-start
           "
@@ -144,6 +147,7 @@
           </div>
 
           <div
+          id="rightLeft"
           class="flex flex-col gap-4 items-center px-5
           md:items-start md:text-start
           "
@@ -159,6 +163,7 @@
           </div>
 
           <div
+          id="rightLeft"
           class="flex flex-col gap-4 items-center px-5
           md:items-start md:text-start
           "
@@ -174,6 +179,7 @@
           </div>
 
           <div
+          id="rightLeft"
           class="flex flex-col gap-4 items-center px-5
           md:items-start md:text-start
           "
@@ -188,7 +194,6 @@
             your money has never been easier. </p>
           </div>
 
-
         </div>
       </div>
     </section>
@@ -201,6 +206,8 @@
       >
         
         <h1
+
+        id="leftRight"
         class="container mx-auto text-center text-3xl text-PrimaryDarkBlue font-semibold px-5 md:text-start md:text-4xl"
         > Latest Articles </h1>
 
@@ -208,7 +215,7 @@
         class="container mx-auto grid grid-cols-smGrid gap-[30px]
         lg:grid-cols-lgGrid lg:px-5
         ">
-          <div
+          <div id="leftRight"
           class="flex flex-col gap-10 hover:-translate-y-2 bg-NeutralWhite pb-5 transition duration-500 cursor-pointer"
           >
             <img src="images/image-currency.jpg" alt="currency"
@@ -228,7 +235,9 @@
                 forced to only receive money in a single … </p>
             </div>
           </div>
-          <div
+
+
+          <div id="leftRight"
           class="flex flex-col gap-10 hover:-translate-y-2 bg-NeutralWhite pb-5 transition duration-500 cursor-pointer"
           >
             <img src="images/image-restaurant.jpg" alt="restaurant">
@@ -247,7 +256,9 @@
               realistic limits each month. That means you … </p>
             </div>
           </div>
-          <div
+
+
+          <div id="leftRight"
           class="flex flex-col gap-10 hover:-translate-y-2 bg-NeutralWhite pb-5 transition duration-500 cursor-pointer"
           >
             <img src="images/image-plane.jpg" alt="plane">
@@ -266,7 +277,9 @@
               while you’re abroad. We’ll even show you … </p>
             </div>
           </div>
-          <div
+
+
+          <div id="leftRight"
           class="flex flex-col gap-10 hover:-translate-y-2 bg-NeutralWhite pb-5 transition duration-500 cursor-pointer"
           >
             <img src="images/image-confetti.jpg" alt="confetti">
@@ -285,6 +298,8 @@
                 forced to only receive money in a single … </p>
             </div>
           </div>
+
+
         </div>
       </div>
     </section>
@@ -300,6 +315,7 @@
       >
 
         <div 
+        id="rightLeft"
         class="
         flex flex-col gap-5 items-center lg:items-start lg:gap-10
         ">
@@ -333,7 +349,7 @@
           </div>
         </div>
 
-        <div class="flex flex-col gap-2 lg:items-end lg:content-between lg:gap-10">
+        <div id="rightLeft" class="flex flex-col gap-2 lg:items-end lg:content-between lg:gap-10">
           <button class="py-[8px] w-[155px] rounded-full mx-auto lg:mx-0
           ">
             Request Invite

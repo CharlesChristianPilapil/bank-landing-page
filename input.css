@@ -74,6 +74,7 @@ ul li a::after {
     ul li a::after {
         bottom: -26px;
     }
+
 }
 
 ul li a:hover::after {
@@ -111,13 +112,6 @@ i:hover {
     @apply text-PrimaryBrightCyan;
 }
 
-#footer-hover p {
-    @apply text-NeutralWhite cursor-pointer transition duration-300;
-}
-
-#footer-hover p:hover {
-    @apply text-PrimaryBrightCyan;
-}
 
 #wrapper {
     width: 100%;
@@ -139,4 +133,81 @@ i:hover {
 
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(transparent, var(--PrimaryBrightCyan), var(--PrimaryLimeGreen), transparent);
+}
+
+/* Animation */
+
+#footer-hover p {
+    @apply text-NeutralWhite cursor-pointer transition duration-300;
+}
+
+#footer-hover p:hover {
+    @apply text-PrimaryBrightCyan;
+}
+
+#footer-hover {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+#footer-hover.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+#leftRight {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+#leftRight.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+#rightLeft {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+#rightLeft.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media (min-width: 976px) {
+
+    #rightLeft:nth-child(3) {
+        transition-delay: 200ms;
+    }
+
+    #rightLeft:nth-child(2) {
+        transition-delay: 400ms;
+    }
+
+    #rightLeft:nth-child(1) {
+        transition-delay: 600ms;
+    }
+
+    #leftRight:nth-child(2) {
+        transition-delay: 200ms;
+    }
+
+    #leftRight:nth-child(3) {
+        transition-delay: 400ms;
+    }
+
+    #leftRight:nth-child(4) {
+        transition-delay: 600ms;
+    }
+
 }
